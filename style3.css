@@ -1,0 +1,333 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    background: rgb(7, 3, 3);
+    color: #c22d2d;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    background-color: #081412;
+    
+  }
+  
+  
+  a {
+    color: #1dc8cd;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  a:hover,
+  a:active,
+  a:focus {
+    color: #1dc9ce;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+    right: 15px;
+    bottom: 0;
+    transition: none;
+    visibility: hidden;
+    opacity: 0;
+    width: 64px;
+    height: 34px;
+  }
+  
+  .back-to-top i {
+    line-height: 0;
+    font-size: 20px;
+  }
+  
+  .back-to-top:focus {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    color: #fff;
+    outline: none;
+  }
+  
+  .back-to-top:hover {
+    background: #1dc8cd;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    height: 90px;
+    transition: all 0.5s;
+    z-index: 997;
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+  }
+  
+  #header.header-transparent {
+    background: transparent;
+  }
+  
+  #header.header-scrolled {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    height: 70px;
+    transition: all 0.5s;
+  }
+  
+  #header #logo h1 {
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  #header #logo h1 a,
+  #header #logo h1 a:hover {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    #header #logo h1 {
+      font-size: 28px;
+    }
+  
+    #header #logo img {
+      max-height: 40px;
+    }
+  }
+
+
+/* Contact Section
+--------------------------------*/
+#contact {
+    background-color: #081412;
+    margin: 0px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 182px 0;
+    overflow: hidden;
+  }
+  
+  #contact .contact-about h3 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9cc14d;
+  }
+  
+  #contact .contact-about p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #888;
+  }
+  
+  #contact .social-links {
+    padding-bottom: 20px;
+  }
+  
+  #contact .social-links a {
+    font-size: 18px;
+    background: #081412;
+    color: #9cc14d;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #9cc14d;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #contact .social-links a i {
+    line-height: 0;
+  }
+  
+  #contact .social-links a:hover {
+    background: #9cc14d;
+    color: #fff;
+  }
+  
+  #contact .info {
+    color: #888;
+  }
+  
+  #contact .info i {
+    font-size: 32px;
+    color: #9cc14d;
+    float: left;
+    line-height: 0;
+  }
+  
+  #contact .info p {
+    padding: 0 0 10px 42px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  
+  #contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  #contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  #contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  #contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  #contact .php-email-form input,
+  #contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  #contact .php-email-form input::focus,
+  #contact .php-email-form textarea::focus {
+    background-color: #1dc8cd;
+  }
+  
+  #contact .php-email-form button[type=submit] {
+    background: linear-gradient(45deg, #1de099, #9cc14d);
+    border: 0;
+    border-radius: 20px;
+    padding: 8px 30px;
+    color: #fff;
+  }
+  
+  #contact .php-email-form button[type=submit]:hover {
+    cursor: pointer;
+  }
+
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: auto;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+    color: #888;
+  }
+  
+  #footer .footer-links a {
+    color: #666;
+    padding-left: 15px;
+  }
+  
+  #footer .footer-links a:first-child {
+    padding-left: 0;
+  }
+  
+  #footer .footer-links a:hover {
+    color: #1dc8cd;
+  }
+  input#name {
+    background-color: black;
+    border: solid rgb(0, 0, 0);
+    
+}
+input#email {
+  background-color: black;
+  border: solid black;
+}
+input#subject {
+  background-color: black;
+  border: solid black;
+}
+textarea.form-control {
+  background-color: black;
+  border: solid black;
+}
